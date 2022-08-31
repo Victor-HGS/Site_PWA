@@ -1,0 +1,127 @@
+html
+{
+    scroll-behavior: smooth;
+}
+body
+{
+    background-image: url('../img/Fundo3.jpg');
+    background-color: transparent;
+    background-size: cover;
+    color: white;
+    font-family: Helvetica, Arial, sans-serif;
+    overflow-x: hidden;
+}
+.navbar {
+    background: linear-gradient(91.12deg, #000000 -0.1%, rgba(1, 1, 1, 0.994792) 18.67%, rgba(0, 0, 0, 0) 100%);
+}
+.margin {
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+.footer {
+    background: linear-gradient(180deg, #000000 37.72%, #7B0000 100%);
+    mix-blend-mode: normal;
+    color: #FFF;
+    margin-bottom: -30px;
+}
+.search
+{
+    width: 500px;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+header
+{
+    width: 98%;
+    background-color: rgba(57, 57, 57, 0.7);
+    margin-left: 20px;
+    padding: 50px;
+    padding-bottom: 5px;
+    overflow: hidden;
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-bottom: 50px;
+}
+.pl
+{
+    width: 98%;
+    font-size: xx-large;
+    font-weight: bold;
+    background-color: #202020;
+    margin-left: 20px;
+    margin-bottom: auto;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+::-webkit-scrollbar
+{
+    background-color: #202020;
+    width: 8px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+::-webkit-scrollbar-thumb
+{
+    background-color: rgba(57, 57, 57, 0.7);
+    border-radius: 5px;
+}
+.user
+{
+    margin-left: 25px;
+    margin-top: -24px;
+    color: #FF0000;
+}
+.useri
+{
+    margin-left: 10px;
+}
+.card
+{
+    padding: 10px;
+    background-color: transparent;
+    border: none;
+    margin: 25px;
+}
+.card-body
+{
+    margin: 25px;
+    margin-top: -35px;
+}
+.lupa
+{
+    height: 28px;
+    border: none;
+    margin-top: 1px;
+    border-color: transparent;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.p
+{
+    height: 30px;
+    background-color: #202020;
+    border-color: transparent;
+    border-right: #202020;
+    border-bottom-right-radius: 0%;
+    border-top-right-radius: 0%;
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+}
+a
+{
+    text-decoration: none;
+    color: #FF0000;
+}
+.texto1
+{
+    background-color: #202020;
+    width: max-content;
+    margin: auto;
+}
+.texto2
+{
+    background-color: #202020;
+    width: max-content;
+    margin: auto;
+}

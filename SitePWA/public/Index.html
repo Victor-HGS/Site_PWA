@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap/js/bootstrap.bundle.min.js">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>	
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script>
+      if('serviceWorker' in navigator) {
+          window.addEventListener('load', () => {
+            console.log('App is loader');
+            navigator.serviceWorker.register('./service-worker-minimum-to-intall-pwa.js')
+            .then( () => {
+              console.log("Service Worker registerd");
+            })
+          })
+        }
+    </script>
+    <link rel="manifest" href="manifest.json?v=8">
+    <script type="js/main.js" defer=""></script>
+    <title>Minha Página</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark" id="topo">
+        <a class="navbar-brand h1 mb-0" href="#">
+            <div>
+                <img class="logo rounded-circle" src="img/Logo.png" alt="logo da digital innovation one">
+            </div>
+        </a>
+        <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-expanded="false">
+            Assistidos recentemente
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="https://animesbr.biz/episodio/shingeki-no-kyojin-the-final-season-episodio-6/">Shingeki no Kyojin</a>
+            <a class="dropdown-item" href="https://animesbr.biz/episodio/boku-no-hero-academia-5-episodio-25/">Boku no Hero</a>
+            <a class="dropdown-item" href="https://animesbr.biz/episodio/pokemon-2019-episodio-75/">Pokemon</a>
+          </div>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarSuppotedContent"></div>
+        <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+            <a class="nav-link active" style="color: #FF0000;" href="#lançamentos">Lançamentos</a>
+        </li>
+        <li class="nav-item active">
+            <a class="nav-link active" style="color: #FF0000;" href="#Wallpapers">Wallpapers</a>
+        </li>
+        <li class="nav-item active">
+            <a class="nav-link active" style="color: #FF0000;" href="#contatosepatrocinios">Contatos e Patrocínios</a>
+        </li>
+        </ul>
+        <div class="user">
+            <img class="useri img-fluid " src="img/User.png" alt="usuario" width="40px">
+            <p>Usuário</p>
+        </div>
+    </nav>
+    <div class="search">
+        <div class="container-fluid">
+            <form class="d-flex" role="search">
+            <input class="p form-control me-2" type="search" placeholder="Pesquisar" aria-label="Search">
+            <button class="lupa bnt bnt-outline-success" type="submit"><img src="img/lupa.png"></button>
+            </form>
+        </div>
+      </div>
+    <div class="container-fluid rounded" id="lançamentos"> 
+            <p class="pl text-center">Ultimos Episódios Lançados: </p>
+    <header class="rounded">
+        <div class="card-group">
+            <div style="width: 18rem;">
+                <img src="img/BlackClover1.png" class="card card-img-top" alt="Black Clover">
+                <div class="card-body">
+                  <p class="card-text">Black Clover - Ep. 170</p><br>
+                  <a href="https://animesbr.biz/episodio/black-clover-episodio-170/" class="btn btn-dark">Clique aqui e assista</a>
+                </div>
+            </div>
+            <div style="width: 18rem;">
+              <img src="img/Boruto.png" class="card card-img-top" alt="Boruto">
+                <div class="card-body">
+                  <p class="card-text">Boruto: Naruto Next Generations - Ep. 251</p>
+                  <a href="https://animesbr.biz/episodio/boruto-naruto-next-generations-episodio-251/" class="btn btn-dark">Clique aqui e assista</a>
+                </div>
+            </div>
+            <div style="width: 18rem;">
+              <img src="img/Spy_Family.png" class="card card-img-top" alt="">
+                <div class="card-body">
+                  <p class="card-text">Spy Family - Ep. 8</p><br>
+                  <a href="https://animesbr.biz/episodio/spyxfamily-episodio-8/" class="btn btn-dark">Clique aqui e assista</a>
+                </div>
+            </div>
+            <div style="width: 18rem;">
+              <img src="img/One_Piece.png" class="card card-img-top" alt="">
+                <div class="card-body">
+                  <p class="card-text">One Piece - Ep. 1019</p><br>
+                  <a href="https://animesbr.biz/episodio/one-piece-episodio-1019/" class="btn btn-dark">Clique aqui e assista</a>
+                </div>
+            </div>
+            <div style="width: 18rem;">
+              <img src="img/Doulou_Dalu.png" class="card card-img-top" alt="Douluo Dalu (Soul Land)">
+                <div class="card-body">
+                  <p class="card-text">Douluo Dalu Soul Land - EP. 210</p>
+                  <a href="https://animesbr.biz/episodio/douluo-dalu-soul-land-episodio-210/" class="btn btn-dark">Clique aqui e assista</a>
+                </div>
+            </div>
+            <div style="width: 18rem;">
+              <img src="img/Nagatoro.png" class="card card-img-top" alt="Ijiranaide, Nagatoro-san">
+                <div class="card-body">
+                  <p class="card-text">Ijiranaide, Nagatoro-san - Ep. 12</p>
+                  <a href="https://animesbr.biz/episodio/ijiranaide-nagatoro-san-episodio-12/" class="btn btn-dark">Clique aqui e assista</a>
+                </div>
+            </div>
+            <div style="width: 18rem;">
+              <img src="img/Nanatsu.png" class="card card-img-top" alt="Nanatsu no Taizai">
+                <div class="card-body">
+                  <p class="card-text">Nanatsu no Taizai - Ep. 24</p><br>
+                  <a href="https://animesbr.biz/episodio/nanatsu-no-taizai-fundo-no-shinpan-episodio-24/" class="btn btn-dark">Clique aqui e assista</a>
+                </div>
+            </div>
+            <div style="width: 18rem;">
+              <img src="img/Dr_Stone.png" class="card card-img-top" alt="">
+                <div class="card-body">
+                  <p class="card-text">Dr. Stone 2 - Ep. 11</p><br>
+                  <a href="https://animesbr.biz/episodio/dr-stone-stone-wars-episodio-11/" class="btn btn-dark">Clique aqui e assista</a>
+                </div>
+            </div>
+        </div>
+            <div class="container-fluid d-flex justify-content-center ">
+              <div class="card w-75 mb-3 border-0">
+                <div class="card-body">
+                  <h5 class="card-title text-white" id="Wallpapers">Baixe Agora</h5>
+                  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                      <ol class="carousel-indicators">
+                          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                      </ol>
+                      <div class="carousel carousel-inner">
+                          <div class="carousel-item active">
+                              <img class="img-fluid w-100" src="img/w3.jpg" alt="First slide">
+                              <div class="carousel-caption d-none d-md-block">
+                                <div class="texto1">
+                                <h5>Records of Ragnarok</h5>
+                                </div>
+                                <div class="texto2">
+                                <p>Baixe <a href="https://wallpaperaccess.com/record-of-ragnarok" >Aqui</a> Wallpapers de Records of Ragnarok</p>
+                                </div>
+                              </div>
+                          </div>
+                          <div class="carousel-item">
+                              <img class="img-fluid w-100" src="img/w1.jpg" alt="Second slide">
+                              <div class="carousel-caption d-none d-md-block">
+                              <div class="texto1">
+                              <h5>Boruto: Naruto Next Generations</h5>
+                              </div>
+                              <div class="texto2">
+                                <p>Baixe <a href="https://wallpaperaccess.com/4k-boruto" >Aqui</a> Wallpapers de Boruto</p>
+                              </div>
+                              </div>
+                          </div>
+                          <div class="carousel-item">
+                              <img class="img-fluid w-100" src="img/w2.jpg" alt="Third slide">
+                              <div class="carousel-caption d-none d-md-block">
+                              <div class="texto1">
+                              <h5>Kimetsu no Yaiba</h5>
+                              </div>
+                              <div class="texto2">
+                                <p>Baixe <a href="https://wallpaperaccess.com/kimetsu-no-yaiba-4k" >Aqui</a> Wallpapers de Kimetsu no Yaiba</p>
+                              </div>
+                              </div>
+                          </div>
+                      </div>
+                      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Previous</span>
+                      </a>
+                      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Next</span>
+                      </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+    </header>
+  </div>
+  <div class="footer">
+  <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top" id="contatosepatrocinios">
+    <p class="col-md-4 mb-0 text-muted">© 2022 Victor Hugo</p>
+    <ul class="nav col-md-4 justify-content-end">
+      <li><a class="nav-link active" style="color: #FFF;" href="https://www.instagram.com/victorhugo.gs/"><img src="img/instagram.png"></a></li>
+      <li><a class="nav-link active" style="color: #FFF;" href="https://www.facebook.com/victorhugo.2004"><img src="img/facebook.png"></a></li>
+      <li><a class="nav-link active" style="color: #FFF;" href="#topo">Volte ao Topo</a></li>
+      <li class="nav-link active">Gmail: <code  style="color: #FFF;"> victorhugo.gs04@gmail.com</code></li>
+    </ul>
+  </footer>
+  </div>
+</body>
+</html>
